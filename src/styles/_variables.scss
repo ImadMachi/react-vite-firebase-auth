@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #000000;
+  --background-color: #ffffff;
+}
+
+body[data-theme="dark"] {
+  --primary-color: #ffffff;
+  --background-color: #000000;
+}

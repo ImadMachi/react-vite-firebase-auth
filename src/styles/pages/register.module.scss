@@ -1,0 +1,54 @@
+@use "@styles/mixins";
+
+.container {
+  background: url("../../assets/images/register-background.jpg"), #140c0a;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.form {
+  max-width: 400px;
+  background-color: #120b0881;
+  backdrop-filter: blur(4px);
+  display: flex;
+  margin: auto;
+  padding: 30px 35px 15px;
+  border-radius: 8px;
+  color: white;
+  @include mixins.box-shadow;
+}
+
+.form label:not(:first-child) {
+  margin-top: 15px;
+}
+
+.form input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.form button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  background-color: #140c0a;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  font-size: 13px;
+  color: #ecb150;
+  margin: 5px 0;
+}
